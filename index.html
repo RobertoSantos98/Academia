@@ -62,7 +62,7 @@
 
     </header>
 
-    <box>
+<box id="main">
 
       <div>
         <h1 id="titulo"><strong>Cadastro de Novo Membro</strong></h1>
@@ -81,7 +81,7 @@
             <label for="sobrenome"><strong>Sobrenome</strong></label>
             <input type="text" name="Sobrenome" id="Sobrenome" required>
           </div>
-          
+        
           <div class="campo">
             <label for="email"><strong>Email</strong></label>
             <input type="email" name="email" id="email" required>
@@ -90,7 +90,7 @@
         </fieldset>
 
 
-        <div class="campo2">
+        <div class="campo">
           <label><strong>Você já pratica alguma atividade física?</strong></label>
           <label>
             <input type="radio" name="treina" value="sim" checked>Sim
@@ -111,10 +111,14 @@
           </select>
         </div>
 
-        <div>
-          <br>
-          <label class="campo"><strong>Possui alguma restrição de treino?</strong></label>
-          <textarea name="restricao" id="restricao" rows="6"></textarea>
+        <div class="campo">
+          <label><strong>Possui alguma restrição de treino?</strong></label>
+          <label>
+            <input type="radio" name="treina2" value="sim">Sim
+          </label>
+          <label>
+            <input type="radio" name="treina2" value="nao">Não
+          </label>
         </div>
 
         <button class="botao" type="submit">Enviar</button>
