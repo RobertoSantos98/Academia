@@ -7,6 +7,7 @@
   <title>UBC ACADEMIA</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styleform.css">
+  <link rel="stylesheet" href="styletabela.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Young+Serif&display=swap"
@@ -62,7 +63,7 @@
 
     </header>
 
-<box id="main">
+    <box id="main">
 
       <div>
         <h1 id="titulo"><strong>Cadastro de Novo Membro</strong></h1>
@@ -81,12 +82,12 @@
             <label for="sobrenome"><strong>Sobrenome</strong></label>
             <input type="text" name="Sobrenome" id="Sobrenome" required>
           </div>
-        
+
           <div class="campo">
             <label for="email"><strong>Email</strong></label>
             <input type="email" name="email" id="email" required>
           </div>
-          
+
         </fieldset>
 
 
@@ -121,11 +122,73 @@
           </label>
         </div>
 
-        <button class="botao" type="submit">Enviar</button>
+        <button class="botao" type="submit">Adicionar</button>
 
       </form>
 
     </box>
+
+    <div class="tabela">
+
+      <h1 class="titulotabela">Usuários Cadastrados</h1>
+      <table border="1">
+        <thead>
+          <th class="center">ID</th>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>E-mail</th>
+          <th>Sedentário</th>
+          <th>Modalidade</th>
+          <th>Restrição</th>
+          <th>Ações</th>
+        </thead>
+
+        <tbody>
+          <td class="center">1</td>
+          <td>Rodrigo</td>
+          <td>Santos</td>
+          <td>betim@betim.com</td>
+          <td class="center">Sim</td>
+          <td>Musculação</td>
+          <td class="center">Sim</td>
+          <td class="center">
+            <img src="editar.png" alt="editar">
+            <img src="excluir.png" alt="excluir">
+          </td>
+        </tbody>
+
+        <tbody>
+          <td class="center">1</td>
+          <td>Raphael</td>
+          <td>Santos</td>
+          <td>betim@betim.com</td>
+          <td class="center">Não</td>
+          <td>Musculação</td>
+          <td class="center">Não</td>
+          <td class="center">
+            <img src="editar.png" alt="editar">
+            <img src="excluir.png" alt="excluir">
+          </td>
+        </tbody>
+
+        <tbody>
+          <td class="center">1</td>
+          <td>Jão</td>
+          <td>Momsem</td>
+          <td>betim@betim.com</td>
+          <td class="center">Não</td>
+          <td>Musculação</td>
+          <td class="center">Sim</td>
+          <td class="center">
+            <img src="editar.png" alt="editar">
+            <img src="excluir.png" alt="excluir">
+          </td>
+        </tbody>
+      
+      </table>
+
+
+    </div>
 
     <footer>
 
@@ -138,7 +201,7 @@
 
 
 
-
+<script src="js.js"></script>
 
 </body>
 
