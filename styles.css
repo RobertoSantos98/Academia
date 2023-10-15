@@ -53,10 +53,17 @@ header {
     color: whitesmoke;
     position: relative;
     text-decoration: none;
+    transition: all 0.4s;
 }
 
 .navigation_link:hover {
-    color: var(--red);
+    color: black;
+    background-color: rgb(223, 226, 39);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 1px;
+    transform: translatey(-5px);
+    
 }
 
 .navigation_sociais {
