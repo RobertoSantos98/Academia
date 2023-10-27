@@ -8,7 +8,7 @@ function setError(index){
 }
 
 function nameValidate(){
-    if(campo.value.lenght < 4){
+    if(campo.value.length < 3){
         console.log('Nome deve ter 3 caracteres');
     } 
     else{
