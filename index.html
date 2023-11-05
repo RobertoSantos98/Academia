@@ -75,21 +75,24 @@
         <br>
       </div>
 
-      <form id="formulario" autocomplete="off">
+      <form id="formulario">
         <fieldset>
           <div class="campo">
             <label for="nome"><strong>Nome</strong></label>
-            <input type="text" name="nome" id="nome" autocomplete="off" required>
+            <input type="text" name="nome" id="nome" autocomplete="off" class="required" oninput="nameValidate()">
+            <span class="span-required">Você deve digitar o nome</span>
           </div>
 
           <div class="campo">
             <label for="sobrenome"><strong>Sobrenome</strong></label>
-            <input type="text" name="Sobrenome" id="Sobrenome" required>
+            <input type="text" name="Sobrenome" id="Sobrenome" class="required" oninput="lastnameValidate()">
+            <span class="span-required">Você deve digitar o Sobrenome</span>
           </div>
 
           <div class="campo">
             <label for="email"><strong>Email</strong></label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" class="required" oninput="emailValidate()">
+            <span class="span-required">Você deve digitar o email</span>
           </div>
 
         </fieldset>
@@ -98,7 +101,7 @@
         <div class="campo">
           <label><strong>Você já pratica alguma atividade física?</strong></label>
           <label>
-            <input type="radio" name="treina" value="sim" checked>Sim
+            <input type="radio" name="treina" value="sim">Sim
           </label>
           <label>
             <input type="radio" name="treina" value="nao">Não
@@ -109,10 +112,10 @@
           <label><strong>Modalidade</strong></label>
           <select id="modalidade">
             <option selected disabled value="">Selecione</option>
-            <option>Musculação</option>
-            <option>Aeróbico</option>
-            <option>Cárdio</option>
-            <option>Zumba</option>
+            <option value="musculacao">Musculação</option>
+            <option value="aerobico">Aeróbico</option>
+            <option value="cardio">Cárdio</option>
+            <option value="zumba">Zumba</option>
           </select>
         </div>
 
@@ -126,7 +129,7 @@
           </label>
         </div>
 
-        <button onclick="usuario.salvar()" class="botao" type="submit" id="adicionar">Adicionar</button>
+        <button class="botao" type="submit" id="adicionar">Adicionar</button>
 
       </form>
 
